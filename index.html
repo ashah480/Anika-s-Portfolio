@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content= "width=device-width,initial-scale = 1.0">
+    <title>Anika's Portfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <a href = "#" class = "logo">Portfolio<span>.</span></a>
+        <div class = "menuToggle" onlick = "toggleMenu();"></div>
+        <ul class = "navigation">
+            <li><a href = "#banner">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#photo">Photography</a></li>
+            <li><a href = "#design">Design</a></li>
+            <li><a href = "#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class = "banner" id = "banner">
+        <div class = "content">
+            <h2>Anika Shah</h2>
+            <p>Pursuing B.S. in Computational Media at Georgia Tech</p>
+            <a href = "https://www.linkedin.com/in/anika-shah906" class = "btn">LinkedIn</a>
+        </div>
+    </section>
+    <section class = "about" id = "about">
+        <div class= "row">
+            <div class = "col50">
+                <h2 class = "titleText"><span>A</span>bout</h2>
+                <p> I am currently an undergraduate student based in NYC and Atlanta metropolitan areas. I am majoring in Computational Media at Georgia Tech with a concentration in Film & Media Studies. I also have a passion for psychology research in areas of cognitive neuroscience and pharmacology. I am interested in learning more about interaction design and user experience and seeking internships in social media marketing and graphic design.<br><br>I have 5 years of experience with portrait photography and 8 years of experience playing the acoustic/electric guitar and ukulele. I am well versed with the music technology software Protools as well as the photography editing software Adobe Lightroom and Adobe Photoshop. Other skill sets and software I have knowledge of are HTML, CSS, Javascript, Aframe and Justinmind.</p>
+            </div>
+            <div class = "col50">
+                <div class = "imgBx">
+                    <img src = "portrait.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "photo" id = "photo">
+        <div class= "title">
+            <h2 class = "titleText"><span>P</span>hotography</h2>
+        </div>
+    </section>
+    <section class = "photo2" id = "photo2">
+        <div class= "row">
+            <div class = "col50">
+            </div>
+        <div class = "p1">
+            <img src ="photo1.png">
+        </div>
+        <div class = "p2">
+            <img src ="photo2.JPG">
+        </div>
+        <div class = "p3">
+            <img src ="photo3.JPG">
+        </div>
+        <div class = "p4">
+            <img src ="photo4.JPG">
+        </div>
+        <div class = "p5">
+            <img src ="photo5.png">
+        </div>
+        <div class = "p6">
+            <img src ="photo6.JPG">
+        </div>
+    </section>
+    <section class = "design" id = "design">
+        <div class= "row">
+            <div class = "col50">
+                <h2 class = "titleText2"><span>D</span>esign</h2>
+                <p>I designed an app during a UX/UI internship at Rutgers University. I went through the process of storyboarding, wireframing and prototyping to develop a sleeping app called "Sleep Haven" that plays therapeutic sounds and tracks the user's heartbeat during the different stages of sleep by connecting with an Apple Watch. The app also provides information about the quality of the user's REM sleep and how it relates to other people of their age range and gender. There are even automatic timers so the sounds will be able to stop playing when the user falls asleep.</p>
+            </div>
+            <div class = "des1">
+                <img src = "des1.png">
+            </div>
+            <div class = "des2">
+                <img src = "des2.png">
+            </div>
+            <div class = "des3">
+                <img src = "des3.png">
+            </div>
+        </div>
+    </section>
+    <section class = "contact" id = "contact">
+        <div class= "title3">
+            <h2 class = "titleText3"><span>C</span>ontact</h2>
+        </div>
+    </section>
+    <section class = "contact2" id = "contact2">
+        <div class = "contactForm">
+            <h4>Send Message</h4>
+                <div class = "inputBox">
+                    <input type = "text" placeholder = "Name">
+                </div>
+                <div class = "inputBox">
+                    <input type = "text" placeholder = "Email">
+                </div>
+                <div class = "inputBox">
+                    <textarea placeholder = "Message"></textarea>
+                </div>
+                <div class = "inputBox">
+                    <input type = "submit" value ="Send">
+                </div>
+        </div>
+    </section>
+    <script type = "text/javascript">
+        window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+        }
+    </script>  
+</body>
+</html>
